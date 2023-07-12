@@ -1,0 +1,84 @@
+html, body{
+    margin: 0;
+    /* margin-top: 20px; */
+}
+.row{
+    display: inline-block;
+    width: 100%;
+}
+.element-2{
+    width: 50%;
+    
+    float: left;
+}
+.element-2-content{
+    background-color: rgb(133, 95, 15);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    /* min-height, height */
+}
+.closing-division{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: red;
+    padding: 10px;
+    z-index: 0;
+    border-radius: 50%;
+    width: 36px;
+    height: 28px;
+    text-align: center;
+
+}
+/* .closing-division2{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: green;
+    padding: 10px;
+    z-index: 1;
+} */
+.navigation-bar{
+    background-color: red;
+    /* position: fixed; */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+.navigation-bar h1{
+    margin: 0;
+}
+@media screen and (max-width: 1024px){
+    .navigation-bar{
+        background-color: yellow;
+    }
+}
+@media screen and (max-width: 768px){
+    .navigation-bar{
+        background-color: green;
+    }
+}
+@media screen and (max-width: 480px){
+    .navigation-bar{
+        background-color: orange;
+    }
+    .element-2{
+        width: 100%;
+        float: none;
+    }
+}
+.icon{
+    color: red;
+    font-size: 80px;
+}
+.closing-division button{
+    background: none;
+    border: none;
+}
+.icon-2{
+    color: aqua;
+    font-size: 35px;
+}
